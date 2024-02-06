@@ -1,0 +1,58 @@
+@font-face{
+    font-family: AutumnFlowers;
+    src: url(../font/Czizh\ Feather.ttf.ttf)
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+    overflow-x: hidden;
+}
+h1{
+    font-family: AutumnFlowers;
+    font-size: 5vw;
+    text-align: center;
+    padding: 25px;
+}
+
+footer{
+    font-family: AutumnFlowers;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(73, 73, 73);
+    padding: 30px 20px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+li{
+    height: 30vh;
+    flex-grow: 10;
+}
+
+li:hover{
+    z-index: 1;
+}
+li:last-child{
+    flex-grow: 0;
+}
+img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) brightness(75%);
+    transition: all 0.25s;
+}
+img:hover{
+    filter: grayscale(0%) brightness(100%);
+    transform: scale(1.1);
+    box-shadow: 0 0 50px 10px #000;
+}
